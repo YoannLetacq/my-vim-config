@@ -41,6 +41,11 @@ Plug 'dense-analysis/ale'                       " Linting et diagnostics en dire
 Plug 'neoclide/coc-clangd'                      " LSP pour C++ avec clangd
 Plug 'lervag/vimtex'                            " Support pour les commentaires Doxygen
 
+" === Ajouts pour CMake ===
+Plug 'pboettch/vim-cmake-syntax'       " Syntaxe améliorée pour CMake
+Plug 'cdelledonne/vim-cmake'           " Intégration de CMake avec Vim
+Plug 'Shatur/neovim-cmake'             " Gestion avancée des builds avec CMake
+
 " Initialize plugin system
 call plug#end()
 
