@@ -38,7 +38,7 @@ Plug 'jackguo380/vim-lsp-cxx-highlight'         " Highlighting syntaxique LSP po
 Plug 'octol/vim-cpp-enhanced-highlight'         " Amélioration de la coloration C++
 Plug 'rhysd/vim-clang-format'                   " Formatage automatique avec clang-format
 Plug 'dense-analysis/ale'                       " Linting et diagnostics en direct
-Plug 'neoclide/coc-clangd'                      " LSP pour C++ avec clangd
+Plug 'clangd/coc-clangd'                      " LSP pour C++ avec clangd
 Plug 'lervag/vimtex'                            " Support pour les commentaires Doxygen
 
 " === Ajouts pour CMake ===
