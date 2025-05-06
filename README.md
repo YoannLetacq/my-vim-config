@@ -1,5 +1,5 @@
 # Guide d'Installation et Premiers Pas avec ma Configuration Vim
-
+(js ts NEW )
 Cette documentation est destinée à un utilisateur **débutant** sous Vim souhaitant installer et configurer un environnement de développement complet pour **C++**, **Rust** et **Go**. Nous verrons d'abord comment installer Vim et les outils, puis les bases de Vim, avant de présenter les raccourcis de ma configuration.
 
 ---
