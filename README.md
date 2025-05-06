@@ -1,5 +1,5 @@
-# Guide d'Installation et Premiers Pas avec ma Configuration Vim
-(js ts NEW )
+# Guide d'Installation et Premiers Pas avec ma Configuration Vim (JS TS NEW)
+
 Cette documentation est destinée à un utilisateur **débutant** sous Vim souhaitant installer et configurer un environnement de développement complet pour **C++**, **Rust** et **Go**. Nous verrons d'abord comment installer Vim et les outils, puis les bases de Vim, avant de présenter les raccourcis de ma configuration.
 
 ---
@@ -31,7 +31,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ### 2.1. Cloner le dépôt GitHub
 
 ```bash
-git clone https://github.com/YoannLetacq/my-vim-config  ~/.vim-config
+git clone <url-du-repo> ~/.vim-config
 ```
 
 ### 2.2. Copier le fichier `.vimrc`
@@ -110,18 +110,29 @@ sudo apt install clang clang-format clangd golang rustc cargo
 
 ## 6. Gestion des fenêtres et splits
 
-| Commande          | Action                            |
-| ----------------- | --------------------------------- |
-| `:split` / `:sp`  | split horizontal                  |
-| `:vsplit` / `:vs` | split vertical                    |
-| `Ctrl-w h/j/k/l`  | changer de fenêtre                |
-| `Ctrl-w o`        | fermer toutes les autres fenêtres |
-| `Ctrl-w _`        | maximiser verticalement           |
-| `Ctrl-w \|`       | maximiser horizontalement         |
+| Commande          | Action                            |                           |
+| ----------------- | --------------------------------- | ------------------------- |
+| `:split` / `:sp`  | split horizontal                  |                           |
+| `:vsplit` / `:vs` | split vertical                    |                           |
+| `Ctrl-w h/j/k/l`  | changer de fenêtre                |                           |
+| `Ctrl-w o`        | fermer toutes les autres fenêtres |                           |
+| `Ctrl-w _`        | maximiser verticalement           |                           |
+| \`Ctrl-w          | \`                                | maximiser horizontalement |
 
----
+## 7. Gestion des buffers
 
-## 7. Présentation de la configuration (`.vimrc`)
+| Commande           | Action                                     |
+| ------------------ | ------------------------------------------ |
+| `:ls`              | Lister tous les buffers ouverts            |
+| `:bnext` / `:bn`   | Aller au buffer suivant                    |
+| `:bprev` / `:bp`   | Aller au buffer précédent                  |
+| `:bdelete` / `:bd` | Fermer un buffer sans quitter Vim          |
+| `:buffer <num>`    | Passer au buffer numéro `<num>`            |
+| `<leader>bd`       | Fermer le buffer courant (raccourci perso) |
+
+## 8. Présentation de la configuration (`.vimrc`)
+
+Présentation de la configuration (`.vimrc`)
 
 La configuration installe les plugins suivants :
 
@@ -168,5 +179,6 @@ call plug#end()
 * **Projets** : ouvrez la racine de votre projet pour que LSP détecte `tsconfig.json`, `Cargo.toml` ou `go.mod`.
 * **Exploration** : utilisez `:NERDTreeToggle` pour naviguer dans l'arborescence.
 
+---
 
-
+Vous êtes maintenant prêt à développer en **C++**, **Rust** et **Go** dans Vim. Bon coding ! 🚀
